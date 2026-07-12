@@ -10,8 +10,8 @@ class Settings(BaseSettings):
 
     llm_provider: str = "openai"
 
-    openai_api_key: str = ""
-    openai_model: str = "gpt-4.1-mini"
+    openrouter_api_key: str = ""
+    openrouter_model: str = "gpt-4.1-mini"
 
     model_config = SettingsConfigDict(
         env_file=".env",

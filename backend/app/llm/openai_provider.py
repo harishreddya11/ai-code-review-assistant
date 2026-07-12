@@ -23,6 +23,8 @@ class OpenAIProvider(LLMProvider):
             result = "Unsupported task."
 
         return AIResponse(
-            task=request.task,
-            result=result,
-        )
+        task=request.task.value,
+        language=request.language,
+        result=result,
+        model="dummy-model"
+)
